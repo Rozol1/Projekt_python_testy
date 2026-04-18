@@ -1,7 +1,11 @@
 @echo off
 echo =======================================================
-echo     ROZPOCZYNAM ZAUTOMATYZOWANY POTOK TESTOWY UMAMI
+echo     ROZPOCZYNAM ZAUTOMATYZOWANY POTOK TESTOWY UMAMI    
 echo =======================================================
+echo.
+
+echo [KROK 0/5] Sprawdzanie i instalacja zaleznosci (requirements.txt)...
+pip install -r requirements.txt
 echo.
 
 echo [KROK 1/5] Uruchamianie testow funkcjonalnych (Pytest)...
@@ -25,6 +29,6 @@ python clean_db.py
 echo.
 
 echo =======================================================
-echo     POTOK ZAKONCZONY SUKCESEM! SPRAWDZ PLIKI RAPORTOW
+echo     POTOK ZAKONCZONY SUKCESEM! SPRAWDZ PLIKI RAPORTOW   
 echo =======================================================
 pause
